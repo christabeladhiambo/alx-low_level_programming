@@ -7,7 +7,7 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-	for (; *haystack != '\0'; aystack++)
+	for (*haystack != '\0'; aystack++)
 	{
 		char *l = haystack;
 		char *p = needle;
