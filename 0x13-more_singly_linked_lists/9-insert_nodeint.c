@@ -19,7 +19,7 @@ new->n = n;
 
 if (idx == 0)
 {
-copy;
+new->next = copy;
 *head = new;
 return (new);
 }
