@@ -1,26 +1,30 @@
 #include <stdio.h>
 
 /**
- * main - prints the numbers from 00 to 99
- * Return: Always 0 (success)
- */
+* main - Print list of number, sorted by a certain sort, without using printf
+* Return: 0 void function
+*/
 int main(void)
 {
-	int n, m;
+	int i, j;
 
-	for (n = 48; n <= 57; n++)
+	i = 0;
+	while (i < 10)
 	{
-		for (m = 48; m <= 57; m++)
+		j = i + 1;
+		while (j < 10)
 		{
-			putchar(n);
-			putchar(m);
-			if (n != 57 || m != 57)
-	        	{
+			putchar(i + 48);
+			putchar(j + 48);
+			if (i != 8)
+			{
 				putchar(',');
 				putchar(' ');
 			}
+			j++;
 		}
+		i++;
 	}
 	putchar('\n');
 	return (0);
-}	
+}
