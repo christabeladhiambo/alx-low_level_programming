@@ -1,22 +1,25 @@
 #include <stdio.h>
 
 /**
- * main - prints all possible combinations of single-digit numbers
- * Return: Always 0 (Success)
- */
+* main - Print all the digit in base 10 separate by , using putchar
+* Return: 0 void function
+*/
+
 int main(void)
 {
-	int n;
+	int digit = 48;
 
-	for (n = 48; n < 58; n++)
+	while (digit < 58)
 	{
-		putchar(n);
-		if (n != 57)
+		putchar(digit);
+		if (digit != 57)
 		{
-	                 													     putchar(',');
-																     putchar(' ');
-															     }
+			putchar(',');
+			putchar(' ');
+		}
+		digit++;
 	}
 	putchar('\n');
+
 	return (0);
 }
